@@ -6,6 +6,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    margin-bottom: 50px; /* 調整したいマージンのサイズに変更してください */
 }
 
 header {
@@ -35,8 +36,10 @@ footer {
     background-color: #2a2a2a;
     color: #fff;
     text-align: center;
-    padding: 1em;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+ 
+}
 }

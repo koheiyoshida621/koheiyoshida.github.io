@@ -42,4 +42,8 @@ footer {
     width: 100%;
  
 }
+
+ol li {
+    margin-bottom: 10px; /* 任意のマージンを設定してください */
+}
 }

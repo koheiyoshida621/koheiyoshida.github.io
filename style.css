@@ -20,11 +20,11 @@ section {
 }
 
 h1, h2 {
-    color: #61dafb; /* Cyan */
+    color: #fff; /* Cyan */
 }
 
 a {
-    color: #4caf50; /* Green */
+    color: #fff; /* Green */
     text-decoration: none;
 }
 

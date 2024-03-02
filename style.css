@@ -2,7 +2,7 @@
 
 body {
     background-color: #1e1e1e;
-    color: #fff;
+    color: #fff; /* 白 */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -34,16 +34,14 @@ a:hover {
 
 footer {
     background-color: #2a2a2a;
-    color: #fff;
+    color: #fff; /* 白 */
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
- 
 }
 
 ol li {
     margin-bottom: 10px; /* 任意のマージンを設定してください */
-}
 }

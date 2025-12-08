@@ -1,47 +1,192 @@
-/* style.css */
+:root {
+  --bg: #020617;
+  --bg-alt: #0f172a;
+  --accent: #38bdf8;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2937;
+  --radius: 18px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    background-color: #1e1e1e;
-    color: #fff; /* 白 */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 50px; /* 調整したいマージンのサイズに変更してください */
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top left, #1e293b 0, #020617 50%, #000 100%);
+  color: var(--text);
 }
 
-header {
-    background-color: #2a2a2a;
-    padding: 1em;
-    text-align: center;
-}
-
-section {
-    margin: 2em;
-}
-
-h1, h2 {
-    color: #fff; /* Cyan */
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
 }
 
 a {
-    color: #fff; /* Green */
-    text-decoration: none;
+  color: var(--accent);
+  text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Header */
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
 }
+
+.logo-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.initials {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.name-block h1 {
+  font-size: 24px;
+}
+
+.role {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Scholar */
+
+.social-links {
+  display: flex;
+}
+
+.social-btn {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--accent);
+  color: #e0f2fe;
+  background: rgba(56, 189, 248, 0.12);
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px;
+}
+
+.hero-main,
+.side-card,
+.card {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+
+.hero-main {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-main-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 24px;
+  object-fit: cover;
+  border: 2px solid rgba(148, 163, 184, 0.6);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+}
+
+/* Sections */
+
+.section {
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 20px;
+}
+
+.pub-list {
+  list-style: none;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Contact */
+
+.contact-email {
+  font-family: monospace;
+  background: #000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px dashed var(--border);
+}
+
+/* Footer */
 
 footer {
-    background-color: #2a2a2a;
-    color: #fff; /* 白 */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--muted);
 }
 
-ol li {
-    margin-bottom: 10px; /* 任意のマージンを設定してください */
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-main {
+    flex-direction: column;
+  }
 }

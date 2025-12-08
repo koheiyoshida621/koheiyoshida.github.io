@@ -1,95 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Kohei Yoshida's HomePage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Kohei Yoshida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kohei Yoshida - High Performance Computing Researcher" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page">
     <header>
-        <h1>Kohei Yoshida</h1>
-<!--        <p>Researcher | Scientist | Educator</p>  -->
+      <div class="top-bar">
+        <div class="logo-block">
+          <div class="logo">
+            <div class="initials">KY</div>
+            <div class="name-block">
+              <h1>Kohei Yoshida</h1>
+              <div class="role">High Performance Computing / Energy-Efficient Systems</div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a
+              class="social-btn"
+              href="https://scholar.google.co.jp/citations?user=6yAgMT0AAAAJ&hl=ja&oi=sra"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Scholar
+            </a>
+          </div>
+        </div>
+
+        <nav>
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <section class="hero" id="about">
+        <div class="hero-main">
+          <div class="hero-main-body">
+            <div class="hero-kicker">
+              <span class="dot"></span>
+              <span>Ph.D. Student &amp; JRA</span>
+            </div>
+
+            <h2 class="hero-title">Computing at scale for science and sustainability.</h2>
+
+            <p class="hero-subtitle">
+              I am a Ph.D. student at the University of Electro-Communications and a
+              Junior Research Associate at RIKEN R-CCS.
+            </p>
+
+            <div class="hero-tags">
+              <span class="tag">HPC</span>
+              <span class="tag">Energy Efficiency</span>
+              <span class="tag">GPU Supercomputing</span>
+              <span class="tag">Distributed DL</span>
+            </div>
+
+            <div class="hero-meta">
+              <div class="meta-item">
+                <div class="meta-label">Current</div>
+                <div class="meta-value">Ph.D. Student / RIKEN JRA</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Keywords</div>
+                <div class="meta-value">HPC, GPU, Energy, Scheduling</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-main-photo">
+            <img src="profile.jpg" alt="Kohei Yoshida" />
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="side-card">
+            <h3>Research Interests</h3>
+            <p>
+              Energy-efficient heterogeneous computing, large-scale GPU clusters,
+              and distributed deep learning.
+            </p>
+            <div class="chip-row">
+              <span class="chip">VAHRM</span>
+              <span class="chip">Performance Modeling</span>
+              <span class="chip">Distributed DL</span>
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h3>Highlights</h3>
+            <ul>
+              <li>IEEE TPDS 2025 (First Author)</li>
+              <li>Parallel Computing 2024</li>
+              <li>R-CCS IS7 Poster</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am a Ph.D. student of <a href="http://www.hpc.is.uec.ac.jp/miwa_lab/index.html" target="_blank">Miwa Lab.</a> at <a href="https://www.uec.ac.jp/eng/" target="_blank">The University of Electro-Communications</a>,. Also, I am a <a href="https://www.riken.jp/en/careers/programs/jra/" target="_blank">JRA (Junior Research Associate)</a> of <a href="https://www.hpbd.r-ccs.riken.jp/hpbd/en/" target="_blank">High Performance Big Data Research Team</a> at <a href="https://www.r-ccs.riken.jp/en/" target="_blank">RIKEN Center for Computational Science (RIKEN R-CCS)</a></p>
-    </section>
+    <main>
+      <section class="section" id="publications">
+        <div class="section-header">
+          <h2 class="section-title">Publications</h2>
+          <div class="section-sub">Selected peer-reviewed works</div>
+        </div>
 
-    <section>
-        <h2>Research Interests</h2>
-        <p>My research interests are high performance computing, application analysis, and deep learning.</p>
-    </section>
+        <div class="card">
+          <ul class="pub-list">
+            <li class="pub-item">[J1] VAHRM: IEEE TPDS, 2025</li>
+            <li class="pub-item">[J2] CUDA Version Impact on GPU Applications, Parallel Computing, 2024</li>
+          </ul>
+        </div>
+      </section>
 
-    <section>
-        <h2>Publications</h2>
-        <h3>Journal（Peer reviewed）</h3>
-        <ol>
-            <li><a href="https://ieeexplore.ieee.org/document/11031465" target="_blank">K. Yoshida, R. Sakamoto, K. Sato, A Bhatele, H Yamaki, H. Honda, and S. Miwa, VAHRM: Variation-Aware Resource Management in Heterogeneous Supercomputing Systems, IEEE Transactions on Parallel and Distributed Systems, Vol.36, Issue 8, pp.1713-1727 (2025)</a>.</li>
-            <li><a href="https://www.sciencedirect.com/science/article/pii/S016781912400019X" target="_blank">K. Yoshida, S. Miwa, H. Yamaki, and H. Honda, Analyzing the Impact of CUDA Versions on GPU Applications, Parallel Computing, Vol.120, No.103081, 10 pages, Elsevier (2024)</a>.</li>
-            <!-- Add more publications as needed -->
-        </ol>
+      <section class="section" id="experience">
+        <div class="section-header">
+          <h2 class="section-title">Experience & Education</h2>
+        </div>
 
-        <h3>International Conference（Peer reviewed）</h3>
-        <ol>
-            <li><a href="" target="_blank">K. Yoshida, H. Yamaki, H. Honda, K. Sato, and S. Miwa, Combining System- and User-Level Approaches to Improving Energy Efficiency in GPU-Based Supercomputers. 6th edition of Full-day Workshop on “Energy Efficient High Performance Computing State of the Practice” (EE HPC SOP 2026) in conjunction with SCA/HPCAsia 2026 (To appear)</a>.</li>
-            <li><a href="" target="_blank">A. Singh, K. Sato, K. Yoshida, K. Uesugi, Y. Joti, T. Hatsui, A. R. Proaño, ROIX-Comp: Optimizing X-ray Computed Tomography Imaging Strategy for Data Reduction and Reconstruction. In Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region (HPCASIA ’26). ACM: Association for Computing Machinery, New York, NY, USA, (2026) (To appear)</a>.</li>
-            <li><a href="https://www.r-ccs.riken.jp/R-CCS-Symposium/2025/program/" target="_blank">K. Yoshida, K. Sato, S. Miwa, and R. Yokota, Evaluating the Impact of Batch Independent Normalization and Shuffling in DDP, 2025 , the 7th R-CCS International Symposium (RCCS-IS7), Kobe, Japan. (Poster)</a>.</li>
-            <li><a href="https://ieeexplore.ieee.org/document/10740900" target="_blank">T. Kusaba, Y. Awaki, K. Yoshida, S. Miwa, H. Yamaki, T. Hanawa, and H. Honda, Power-Efficiency Variation on A64FX Supercomputers and its Application to System Operation, 2024 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops), pp. 55-65 (2024)</a>.</li>
-            <li><a href="https://dl.acm.org/doi/10.1145/3545008.3545084" target="_blank">K. Yoshida, R. Sageyama, S. Miwa, H. Yamaki, and H. Honda, Analyzing Performance and Power-Efficiency Variations among NVIDIA GPUs, The 51st International Conference on Parallel Processing (ICPP), Sep. 2022, No. 65, pp.1-12 (acceptance rate: 84/311=27%)</a>.</li>
-            <li><a href="https://link.springer.com/chapter/10.1007/978-3-319-39817-4_21" target="_blank">E. Tomita, K. Yoshida, T. Hatta, A. Nagao, H. Ito, M. Wakatsuki, A much faster branch-and-bound algorithm for finding a maximum clique, International Workshop on Frontiers in Algorithmics (FAW), Lecture Notes in Computer Science, June. 2016, 9711, pp.215-226 (2016)</a>.</li>
-            <!-- Add more publications as needed -->
-        </ol>
-        <h3>Domestic Conference（No peer review）</h3>
-        <ol>
-            <li>久保 優也，吉田 幸平，三輪 忍，八巻 隼人，本多 弘樹， LSTMによるジョブの実行時間予測および予測実行時間と要求実行時間を併用するジョブスケジューリング， 情報処理学会研究報告 2023-HPC-193, No.13, pp.1-8 (2024）．</li>
-            <li>草場 智也，吉田 幸平，三輪 忍，八巻 隼人，本多 弘樹， A64FXプロセッサにおける電力・性能ばらつきの評価・分析， 情報処理学会研究報告 2023-HPC-188, No.21, pp.1-6 (2023)．</li>
-            <li>郡司 賢，吉田 幸平，三輪 忍，八巻 隼人，本多 弘樹， 実HPCアプリケーションを用いたマルチGPUにおける電力ばらつきの評価， 情報処理学会研究報告 2023-HPC-188, No.20, pp.1-9 (2023)．</li>
-            <li>小野 賢人，吉田 幸平，三輪 忍，坂本 龍一，八巻 隼人，本多 弘樹， CPUおよびGPUの電力ばらつきを考慮したジョブスケジューリング手法の提案， 情報処理学会研究報告 2022-HPC-185, No.20, pp.1-8 (2022)．</li>
-            <li>吉田 幸平，三輪 忍，八巻 隼人，本多 弘樹， CUDAバージョンの違いがカーネルの実行時間と消費電力に与える影響の分析， 情報処理学会研究報告 2021-HPC-183, No.16, pp.1-8 (2022)．</li>
-            <li>提山 春日，吉田 幸平，三輪 忍，八巻 隼人，本多 弘樹， Wisteria/BDEC-01におけるNVIDIA A100 GPUの電力性能ばらつきの評価， 情報処理学会研究報告 2021-HPC-182, No.3, pp.1-9 (2021)．</li>
-            <li>吉田 幸平，八田 拓郎，富田 悦次，長尾 篤樹，伊藤 大雄，若月 光夫， 最大クリーク抽出アルゴリズムMCSの高速化， 情報処理学会研究報告 2016-AL-157, No.8, pp.1-8 (2016)．</li>
-            <!-- Add more publications as needed -->
-        </ol>
+        <div class="two-col">
+          <div class="card">
+            <h3>Experience</h3>
+            <ul class="timeline">
+              <li>RIKEN R-CCS JRA (2024–Present)</li>
+              <li>Internship in France (2025)</li>
+              <li>CTC Engineer (2016–2020)</li>
+            </ul>
+          </div>
 
-    </section>
+          <div class="card" id="education">
+            <h3>Education</h3>
+            <ul class="timeline">
+              <li>Ph.D., UEC (2023–Present)</li>
+              <li>M.E., UEC (2023)</li>
+              <li>B.E., UEC (2016)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <section>
-        <h2>Work Experience</h2>
-        <p></p>
-        <p>Internship at <a href="https://mdls.fr/" target="_blank">Maison de la Simulation</a> of <a href="https://www.cea.fr/english/Pages/Welcome.aspx" target="_blank">CEA</a>, France, Jan. 2025–Apr. 2025</p>
-        <p>Technical Support Representative at<a href="https://www.uec.ac.jp/eng/" target="_blank">The University of Electro-Communications</a>, May. 2024–Jan. 2025</p>
-        <p><a href="https://www.riken.jp/en/careers/programs/jra/" target="_blank">JRA (Junior Research Associate)</a> of <a href="https://www.hpbd.r-ccs.riken.jp/hpbd/en/" target="_blank">High Performance Big Data Research Team</a> at <a href="https://www.r-ccs.riken.jp/en/" target="_blank">RIKEN Center for Computational Science (RIKEN R-CCS)</a>, Apr. 2024–Present</p>
-        <p>Research Part-time Assistant I of <a href="https://www.hpbd.r-ccs.riken.jp/hpbd/en/" target="_blank">High Performance Big Data Research Team</a> at <a href="https://www.r-ccs.riken.jp/en/" target="_blank">RIKEN Center for Computational Science (RIKEN R-CCS)</a>, Apr. 2023–Mar. 2024</p>
-        <p>Technical Support Representative at <a href="https://www.uec.ac.jp/eng/" target="_blank">The University of Electro-Communications</a>,, May. 2022–Mar. 2023</p>
-        <p><a href="https://www.ctc-g.co.jp/en/" target="_blank">ITOCHU Techno-Solutions Corporation, CTC</a>, Apr. 2016–Dec. 2020</p>
+      <section class="section" id="contact">
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
+        </div>
 
-        <!-- Add more career details as needed -->
-    </section>
+        <div class="card contact-card">
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-email">yoshida[at]hpc.is.uec.ac.jp</div>
+          </div>
+          <div>
+            <div class="contact-label">RIKEN</div>
+            <div class="contact-email">kohei.yoshida[at]riken.jp</div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <section>
-        <h2>Education</h2>
-        <p>Ph.D. Student of <a href="http://www.hpc.is.uec.ac.jp/miwa_lab/index.html" target="_blank">Miwa Lab.</a> at <a href="https://www.uec.ac.jp/eng/" target="_blank">The University of Electro-Communications</a>, From April 2023</p> 
-        <p>Master of Engineering, <a href="http://www.hpc.is.uec.ac.jp/miwa_lab/index.html" target="_blank">Miwa Lab.</a>, <a href="https://www.uec.ac.jp/eng/" target="_blank">The University of Electro-Communications</a>,, Mar. 2023</p>
-        <p>Bachelor of Engineering, <a href="https://www.uec.ac.jp/eng/" target="_blank">The University of Electro-Communications</a>,, Mar. 2016</p>
-
-        <!-- Add more career details as needed -->
-    </section>
-
-    
-    <section>
-        <h2>Contact</h2>
-        <p>Email: yoshida`AT`hpc.is.uec.ac.jp</p>
-        <p>Email: kohei.yoshida`AT`riken.jp</p>
-
-        <!-- Add more contact details as needed -->
-    </section>
-
-
-    
     <footer>
-        &copy; 2024 Kohei Yoshida</a>
+      <span>© 2025 Kohei Yoshida</span>
+      <span>Built with GitHub Pages</span>
     </footer>
+  </div>
 </body>
 </html>

@@ -4,24 +4,33 @@
   <meta charset="UTF-8" />
   <title>Kohei Yoshida</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Kohei Yoshida - High Performance Computing Researcher" />
+  <meta
+    name="description"
+    content="Kohei Yoshida - High Performance Computing / Energy-Efficient Systems"
+  />
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page">
-    <header>
+    <!-- ================== HEADER ================== -->
+    <header class="site-header">
       <div class="top-bar">
         <div class="logo-block">
           <div class="logo">
             <div class="initials">KY</div>
             <div class="name-block">
               <h1>Kohei Yoshida</h1>
-              <div class="role">High Performance Computing / Energy-Efficient Systems</div>
+              <div class="role">
+                High Performance Computing / Energy-Efficient Systems
+              </div>
             </div>
           </div>
 
@@ -37,7 +46,7 @@
           </div>
         </div>
 
-        <nav>
+        <nav class="main-nav">
           <a href="#about">About</a>
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
@@ -46,7 +55,9 @@
         </nav>
       </div>
 
+      <!-- ================== HERO ================== -->
       <section class="hero" id="about">
+        <!-- メインカード（テキスト＋顔写真） -->
         <div class="hero-main">
           <div class="hero-main-body">
             <div class="hero-kicker">
@@ -54,123 +65,211 @@
               <span>Ph.D. Student &amp; JRA</span>
             </div>
 
-            <h2 class="hero-title">Computing at scale for science and sustainability.</h2>
+            <h2 class="hero-title">
+              Computing at scale for science and sustainability.
+            </h2>
 
             <p class="hero-subtitle">
-              I am a Ph.D. student at the University of Electro-Communications and a
-              Junior Research Associate at RIKEN R-CCS.
+              I am a Ph.D. student at
+              the University of Electro-Communications and a
+              Junior Research Associate at
+              RIKEN R-CCS.
             </p>
 
             <div class="hero-tags">
-              <span class="tag">HPC</span>
+              <span class="tag">High Performance Computing</span>
               <span class="tag">Energy Efficiency</span>
-              <span class="tag">GPU Supercomputing</span>
-              <span class="tag">Distributed DL</span>
+              <span class="tag">GPU Supercomputers</span>
+              <span class="tag">Distributed Deep Learning</span>
             </div>
 
             <div class="hero-meta">
               <div class="meta-item">
                 <div class="meta-label">Current</div>
-                <div class="meta-value">Ph.D. Student / RIKEN JRA</div>
+                <div class="meta-value">
+                  Ph.D. Student / JRA at RIKEN R-CCS
+                </div>
               </div>
               <div class="meta-item">
                 <div class="meta-label">Keywords</div>
-                <div class="meta-value">HPC, GPU, Energy, Scheduling</div>
+                <div class="meta-value">
+                  HPC, performance variation, energy-aware scheduling, DL systems
+                </div>
               </div>
             </div>
           </div>
 
           <div class="hero-main-photo">
+            <!-- ルートに profile.jpg を置く -->
             <img src="profile.jpg" alt="Kohei Yoshida" />
           </div>
         </div>
 
+        <!-- 右側カード（PC）／下に回るカード（スマホ） -->
         <aside class="hero-side">
           <div class="side-card">
             <h3>Research Interests</h3>
             <p>
               Energy-efficient heterogeneous computing, large-scale GPU clusters,
-              and distributed deep learning.
+              and distributed deep learning, with a particular focus on
+              performance and power-efficiency variations.
             </p>
             <div class="chip-row">
               <span class="chip">VAHRM</span>
-              <span class="chip">Performance Modeling</span>
-              <span class="chip">Distributed DL</span>
+              <span class="chip">Variation-aware resource management</span>
+              <span class="chip">Performance &amp; power modeling</span>
+              <span class="chip">Distributed data-parallel training</span>
             </div>
           </div>
 
           <div class="side-card">
             <h3>Highlights</h3>
             <ul>
-              <li>IEEE TPDS 2025 (First Author)</li>
-              <li>Parallel Computing 2024</li>
-              <li>R-CCS IS7 Poster</li>
+              <li>First-author paper on VAHRM in <em>IEEE TPDS</em> (2025)</li>
+              <li>CUDA version impact study in <em>Parallel Computing</em> (2024)</li>
+              <li>DDP shuffling poster at R-CCS International Symposium (2025)</li>
             </ul>
           </div>
         </aside>
       </section>
     </header>
 
+    <!-- ================== MAIN CONTENT ================== -->
     <main>
+      <!-- Publications -->
       <section class="section" id="publications">
         <div class="section-header">
           <h2 class="section-title">Publications</h2>
-          <div class="section-sub">Selected peer-reviewed works</div>
+          <div class="section-sub">
+            Selected peer-reviewed works (see Google Scholar for the full list).
+          </div>
         </div>
 
         <div class="card">
+          <h3 class="card-title">Journal Articles</h3>
           <ul class="pub-list">
-            <li class="pub-item">[J1] VAHRM: IEEE TPDS, 2025</li>
-            <li class="pub-item">[J2] CUDA Version Impact on GPU Applications, Parallel Computing, 2024</li>
+            <li class="pub-item">
+              [J1] K. Yoshida et al.,
+              <em>VAHRM: Variation-Aware Resource Management in Heterogeneous Supercomputing Systems</em>,
+              IEEE Transactions on Parallel and Distributed Systems, 2025.
+            </li>
+            <li class="pub-item">
+              [J2] K. Yoshida et al.,
+              <em>Analyzing the Impact of CUDA Versions on GPU Applications</em>,
+              Parallel Computing, 2024.
+            </li>
+          </ul>
+
+          <h3 class="card-title">International Conferences &amp; Workshops</h3>
+          <ul class="pub-list">
+            <li class="pub-item">
+              [C1] Combining system- and user-level approaches to improving energy efficiency
+              in GPU-based supercomputers, EE HPC SOP @ SCA/HPCAsia 2026 (to appear).
+            </li>
+            <li class="pub-item">
+              [C2] Power-efficiency variation on A64FX supercomputers and its application to
+              system operation, IEEE Cluster Workshops 2024.
+            </li>
           </ul>
         </div>
       </section>
 
+      <!-- Experience & Education -->
       <section class="section" id="experience">
         <div class="section-header">
-          <h2 class="section-title">Experience & Education</h2>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <div class="section-sub">
+            Industrial background and academic trajectory.
+          </div>
         </div>
 
         <div class="two-col">
           <div class="card">
-            <h3>Experience</h3>
+            <h3 class="card-title">Experience</h3>
             <ul class="timeline">
-              <li>RIKEN R-CCS JRA (2024–Present)</li>
-              <li>Internship in France (2025)</li>
-              <li>CTC Engineer (2016–2020)</li>
+              <li>
+                <div class="timeline-title">
+                  JRA, High Performance Big Data Research Team, RIKEN R-CCS
+                </div>
+                <div class="timeline-meta">Apr. 2024 – Present</div>
+              </li>
+              <li>
+                <div class="timeline-title">
+                  Research Part-time Assistant I, RIKEN R-CCS
+                </div>
+                <div class="timeline-meta">Apr. 2023 – Mar. 2024</div>
+              </li>
+              <li>
+                <div class="timeline-title">
+                  Internship, Maison de la Simulation, CEA, France
+                </div>
+                <div class="timeline-meta">Jan. 2025 – Apr. 2025</div>
+              </li>
+              <li>
+                <div class="timeline-title">
+                  Technical Support Representative, The University of Electro-Communications
+                </div>
+                <div class="timeline-meta">May. 2022 – Jan. 2025 (two periods)</div>
+              </li>
+              <li>
+                <div class="timeline-title">
+                  ITOCHU Techno-Solutions Corporation (CTC)
+                </div>
+                <div class="timeline-meta">Apr. 2016 – Dec. 2020</div>
+              </li>
             </ul>
           </div>
 
           <div class="card" id="education">
-            <h3>Education</h3>
+            <h3 class="card-title">Education</h3>
             <ul class="timeline">
-              <li>Ph.D., UEC (2023–Present)</li>
-              <li>M.E., UEC (2023)</li>
-              <li>B.E., UEC (2016)</li>
+              <li>
+                <div class="timeline-title">
+                  Ph.D. Student, Miwa Lab., The University of Electro-Communications
+                </div>
+                <div class="timeline-meta">Apr. 2023 – Present</div>
+              </li>
+              <li>
+                <div class="timeline-title">
+                  M.E., The University of Electro-Communications
+                </div>
+                <div class="timeline-meta">Mar. 2023</div>
+              </li>
+              <li>
+                <div class="timeline-title">
+                  B.E., The University of Electro-Communications
+                </div>
+                <div class="timeline-meta">Mar. 2016</div>
+              </li>
             </ul>
           </div>
         </div>
       </section>
 
+      <!-- Contact -->
       <section class="section" id="contact">
         <div class="section-header">
           <h2 class="section-title">Contact</h2>
+          <div class="section-sub">
+            Feel free to reach out regarding collaborations, internships, or questions.
+          </div>
         </div>
 
         <div class="card contact-card">
           <div>
-            <div class="contact-label">Email</div>
+            <div class="contact-label">Academic Email</div>
             <div class="contact-email">yoshida[at]hpc.is.uec.ac.jp</div>
           </div>
           <div>
-            <div class="contact-label">RIKEN</div>
+            <div class="contact-label">RIKEN Email</div>
             <div class="contact-email">kohei.yoshida[at]riken.jp</div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <!-- ================== FOOTER ================== -->
+    <footer class="site-footer">
       <span>© 2025 Kohei Yoshida</span>
       <span>Built with GitHub Pages</span>
     </footer>

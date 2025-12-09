@@ -334,7 +334,7 @@ a:hover {
 /* Publications */
 
 .pub-list {
-  list-style: none;
+  list-style: decimal;
   font-size: 14px;
   padding-left: 0;
 }

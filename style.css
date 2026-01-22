@@ -119,6 +119,18 @@ a:hover {
   background: rgba(56, 189, 248, 0.22);
 }
 
+/* ===== ORCID button ===== */
+
+.orcid-btn {
+  border-color: #a6ce39;
+  color: #ecfdf3;
+  background: rgba(166, 206, 57, 0.12);
+}
+
+.orcid-btn:hover {
+  background: rgba(166, 206, 57, 0.22);
+}
+
 /* Main nav */
 
 .main-nav {
